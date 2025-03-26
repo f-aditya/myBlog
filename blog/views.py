@@ -76,7 +76,7 @@ def post_share(request, post_id):
             send_mail(
                 subject=subject,
                 message=message,
-                from_email=none,
+                from_email=None,
                 recipient_list=[cd["to"]],
             )
             sent = True  # Tandai email berhasil dikirim
